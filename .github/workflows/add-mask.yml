@@ -7,4 +7,4 @@ jobs:
       PASSWORD: SuperSecretValue
     steps:
       - run: echo "::add-mask::${PASSWORD}" # パスワードをマスク
-      - run: echo "{$PASSWORD} # マスクされたパスワードを表示
+      - run: echo "${PASSWORD} # マスクされたパスワードを表示
